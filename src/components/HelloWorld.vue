@@ -63,6 +63,7 @@
   </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
   data () {
     return {
@@ -121,6 +122,14 @@ export default {
       this.alertTable[0].amount1 = row.amount1
       this.alertTable[0].amount2 = row.amount2
       this.alertTable[0].amount3 = row.amount3
+      console.log(1)
+      axios.get('http://localhost:8081/static/test.json')
+        .then((res) => {
+          console.log(res.data)
+        })
+        .catch((err) => {
+          console.log(err)
+        })
     },
     handleSelectionChange (val) {
       // console.log(val[0].id)
