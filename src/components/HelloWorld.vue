@@ -116,7 +116,7 @@ export default {
     },
     clickfunc (row, event, column) {
       this.isShow = true
-      this.alertTable[0].id = row.id
+      this.alertTable[0].id = row['id']
       this.alertTable[0].name = row.name
       this.alertTable[0].amount1 = row.amount1
       this.alertTable[0].amount2 = row.amount2
