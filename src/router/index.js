@@ -12,7 +12,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/qq',
+      path: '/',
       name: 'HelloWorld',
       component: HelloWorld
     },
@@ -27,12 +27,12 @@ export default new Router({
       component: form
     },
     {
-      path: '/page',
+      path: '/q',
       name: 'page',
       component: page
     },
     {
-      path: '/',
+      path: '/zhiling',
       name: 'zhiling',
       component: zhiling
     }

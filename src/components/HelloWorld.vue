@@ -31,12 +31,13 @@
       </el-table-column>
       <el-table-column label="数值 3（元）">
         <!--
-          ⬇️scope.row.name ： 可以直接row, column, $index 和 store（table 内部的状态管理）的数据
+          ⬇️ scope.row.name ： 可以直接row, column, $index 和 store（table 内部的状态管理）的数据
         -->
         <template slot-scope="scope">
           <el-popover trigger="hover">
             <p>姓名: {{ scope.row.name }}</p>
             <p>ID: {{ scope.row.id }}</p>
+            <p>行: {{ scope.$index + 1}}</p>
             <div slot="reference" class="name-wrapper">
               <el-tag size="medium">{{ scope.row.name }}</el-tag>
             </div>

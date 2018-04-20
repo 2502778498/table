@@ -111,7 +111,6 @@ export default {
     },
     handleCurrentChange (val) {
       console.log(`当前页: ${val}`)
-      // 每页2条
       let arr = []
       arr = this.tableData6.slice(this.meiye * val - this.meiye, this.meiye * val)
       this.truepage = arr
