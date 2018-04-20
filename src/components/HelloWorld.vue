@@ -16,7 +16,7 @@
   show-summary:在表格最后新增‘合计’行  不带单位
   :summary-method="getSummaries"：方法 需与上面的属性一起使用
   @selection-change="handleSelectionChange":  当选择项发生变化时会触发该事件  参数 val[0] 包含该行的数据
-  @row-click  点击行时触发 擦数 row event column
+  @row-click  点击行时触发 参数 row event column
 
   点击高亮该行：highlight-current-row  @current-change="choose"
 -->
@@ -179,3 +179,12 @@ export default {
   }
 }
 </script>
+<style lang='less'>
+.el-table {
+  th{
+    .cell{
+      text-align: center;
+    }
+  }
+}
+</style>
